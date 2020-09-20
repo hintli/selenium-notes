@@ -14,9 +14,13 @@ tarayici.get("https://www.yemeksepeti.com/kktc")
 
 tarayici.maximize_window()
 
+
 element = tarayici.find_element(By.NAME, 'session[username_or_email]')
+
 # element = tarayici.find_element(By.XPATH, '//*[@id="react-root"]/div/div/div[2]/main/div/div/form/div/div[1]/label/div/div[2]/div/input')
+
 # element = tarayici.find_element(By.LINK_TEXT, 'English')
+
 # element = tarayici.find_element(By.PARTIAL_LINK_TEXT, 'Engli')
 
 
@@ -26,8 +30,11 @@ element.send_keys("canilgu@gmail.com")
 #element.click()
 
 #try:
-#   element = tarayici.find_element(By.TAG_NAME, 'h1')
+
+    #element = tarayici.find_element(By.TAG_NAME, 'h1')
+
     # element = tarayici.find_elements(By.CLASS_NAME, 'about-me')
+  #ul.simple simple classlı ul tagli elementi seç
     # element = tarayici.find_elements(By.CSS_SELECTOR, 'ul.simple')
 
     #print("Element Bulundu!")
@@ -41,3 +48,15 @@ element.send_keys("canilgu@gmail.com")
 sleep(3)
 tarayici.quit()
 
+
+#ID+
+#XPATH+
+#LINK_TEXT+a etiketi içindeki text copy paste English
+#PARTIAL_LINK_TEXT
+#NAME+
+#TAG_NAME+element.text
+#CLASS_NAME+
+#CSS_SELECTOR html>body>p p etikenşni seçmek tarayici.find_element_by_class_selector("p.context")
+
+
+#yemek sepeti
