@@ -63,6 +63,8 @@ class Twitter:
         try:
             print("Aşağıya kaydırıyorum..")
             sleep(1.5)
+            #execute_script ile js kodlarını çalıştırabiliyoruz
+            #sayfayı aşağı doğru harekete geçir
             self.tarayici.execute_script("window.scrollTo(0,550)")
 
         except:
@@ -70,6 +72,7 @@ class Twitter:
 
         try:
             print("Beğenme işlemi başarılı.")
+            #beğenilecek postun beğenme butonu xpath
             begenme_butonu = WebDriverWait(self.tarayici,10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div/div[2]/section/div/div/div/div[1]/div/div/div/div/article/div/div[2]/div[2]/div[2]/div[3]/div[3]/div/div/div[1]')))
             begenme_butonu.click()
 

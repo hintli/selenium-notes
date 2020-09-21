@@ -9,8 +9,8 @@ kullanici_adi = "kullanici_adi"  # input("Lütfen twitter kullanici adinizi giri
 sifre = "kullanici_sifre"  # input("Şifrenizi giriniz: ")
 
 
-class Twitter:
-    def __init__(self, kullanici_adi, sifre):
+class Twitter:#self daha sonra kullanabilmek için(2.,3. fonksiyonda) selfle tanımlıyoruz
+    def __init__(self, kullanici_adi, sifre):#class,dışardan giricek parametreler,this=self
         self.kullanici_adi = kullanici_adi
         self.sifre = sifre
         self.tarayici = webdriver.Chrome(executable_path=f"C:\\Program Files (x86)\\Google\\chromedriver.exe")
@@ -34,3 +34,6 @@ class Twitter:
 
         except:
             print("Kullanıcı Adı Girilemedi!")
+
+#EC.visibility_of_element_located ->click ile aynı herhalde
+# ((By.NAME, 'session[username_or_email]')))//neye göre aldık,ne aldık

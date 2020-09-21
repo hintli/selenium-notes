@@ -24,3 +24,13 @@ try:
 except:
     print("Hata!")
     tarayici.quit()
+
+#web sitesine eriştiğimiz zaman bazı butonlar felan geç gelebiliyor
+#element bulama hatalarından kurtulmak için bekleme felan kullanıyoruz
+
+#as EC
+#element = WebDriverWait(tarayici,10).until(
+# ECÇpresence_of_element_located(By.XPATH,"Element"))
+#_clickable ->elemente tıklama işlemi
+#tavsiye edilen:WebDriverWait bekleme bu eleman varolana kadar 10 saniye beklet
+#implicitly_wait dahada kısa direk tarayıcı ile etkileşim kurup tarayıcıyı bekletiyor
